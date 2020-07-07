@@ -33,3 +33,8 @@ done
 echo ${!dictionary[@]}
 
 echo ${dictionary[@]}
+for key in ${!dictionary[@]}
+do
+        value=${dictionary[$key]}
+        echo " $key $((( $value *100 ) / $a )) %"
+done | sort -k2 -nr | awk 'NR==1{print "Winner is "$1"    " $2"%"}'
