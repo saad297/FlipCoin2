@@ -5,7 +5,8 @@ echo "Welcome to the flip coin combination program."
 read -p "Enter the number of times you want to flip : " a
 read -p "Enter the choice of combination :
 1) Singlet
-2) Doublet  " b
+2) Doublet
+3) Triplet  " b
 
 
 declare -A dictionary
